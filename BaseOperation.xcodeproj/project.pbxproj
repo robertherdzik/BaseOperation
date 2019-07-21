@@ -10,6 +10,7 @@
 		B12DB83D22E49382009E5B81 /* BaseOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12DB83322E49382009E5B81 /* BaseOperation.framework */; };
 		B12DB84222E49382009E5B81 /* BaseOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12DB84122E49382009E5B81 /* BaseOperationTests.swift */; };
 		B12DB84422E49382009E5B81 /* BaseOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B12DB83622E49382009E5B81 /* BaseOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B12DB84E22E497FE009E5B81 /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12DB84D22E497FE009E5B81 /* BaseOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B12DB83C22E49382009E5B81 /* BaseOperationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseOperationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12DB84122E49382009E5B81 /* BaseOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOperationTests.swift; sourceTree = "<group>"; };
 		B12DB84322E49382009E5B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12DB84D22E497FE009E5B81 /* BaseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B12DB83622E49382009E5B81 /* BaseOperation.h */,
 				B12DB83722E49382009E5B81 /* Info.plist */,
+				B12DB84D22E497FE009E5B81 /* BaseOperation.swift */,
 			);
 			path = BaseOperation;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B12DB83222E49382009E5B81 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					B12DB83B22E49382009E5B81 = {
 						CreatedOnToolsVersion = 10.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12DB84E22E497FE009E5B81 /* BaseOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		B12DB84822E49382009E5B81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = robertherdzik.BaseOperation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		B12DB84922E49382009E5B81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		B12DB84B22E49382009E5B81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseOperationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		B12DB84C22E49382009E5B81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseOperationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
