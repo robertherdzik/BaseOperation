@@ -82,13 +82,13 @@ open class BaseOperation: Operation {
         execute()
     }
     
-    public func execute() {
+    open func execute() {
         print("\(type(of: self)) must override `execute()`.")
         
         finish()
     }
     
-    final public func finish() {
+    open func finish() {
         if !hasFinishedAlready {
             hasFinishedAlready = true
             
