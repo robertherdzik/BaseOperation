@@ -6,7 +6,7 @@
 //  Copyright © 2019 Robert Herdzik. All rights reserved.
 //
 
-public final class BaseOperation: Operation {
+public class BaseOperation: Operation {
     
     override public var isAsynchronous: Bool {
         return true
