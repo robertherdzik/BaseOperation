@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "BaseOperation"
-s.version      = "0.0.5"
+s.version      = "0.0.6"
 s.summary      = "Easy to use base class for Operation"
 s.description  = "Easy to use base class for Operation"
 s.homepage     = "https://github.com/robertherdzik/BaseOperation"
